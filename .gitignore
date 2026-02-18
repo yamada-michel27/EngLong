@@ -1,18 +1,41 @@
-# Android
-android/.gradle
-android/local.properties
-android/build
-android/app/build
-*.iml
+# ===== Android / Gradle =====
+**/.gradle/
+**/build/
+**/*.iml
+**/.idea/
+**/.cxx/
+**/local.properties
 
-# Spring Boot
-backend/.gradle
-backend/build
-backend/out
+# ===== Android Studio / IntelliJ =====
+**/.idea/**
 
-# OS
+# ===== Emulator / AVD (絶対に入れない) =====
+**/*.avd/
+**/*.ini
+**/*.qcow2
+**/cache.img
+**/cache.img.qcow2
+**/userdata-qemu.img
+**/userdata-qemu.img.qcow2
+**/snapshots/
+**/.emulator_console_auth_token
+**/emu-last-feature-flags.protobuf
+**/emu-update-last-check.ini
+**/emu-launch-params.txt
+
+# ===== Keystore / Secrets =====
+**/*.keystore
+**/*.jks
+**/*.p12
+**/debug.keystore
+**/debug.keystore.lock
+**/.env
+
+# ===== Backend (Spring/Gradle) =====
+backend/.gradle/
+backend/build/
+backend/out/
+
+# ===== OS =====
 .DS_Store
 Thumbs.db
-
-# Docker
-infra/pgdata
