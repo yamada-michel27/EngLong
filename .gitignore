@@ -1,0 +1,18 @@
+# Android
+android/.gradle
+android/local.properties
+android/build
+android/app/build
+*.iml
+
+# Spring Boot
+backend/.gradle
+backend/build
+backend/out
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+infra/pgdata
